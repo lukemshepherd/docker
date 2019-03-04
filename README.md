@@ -1,4 +1,4 @@
-# Python 3 w/ juypter lab 
+# Python 3 with Juypter Lab 
 
 Installs (through conda):
 
