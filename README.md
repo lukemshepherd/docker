@@ -1,2 +1,5 @@
-# dockerfiles
-Dockerfiles for data science 
+# Python 3 w/ juypter lab 
+
+Packages (through conda):
+Jupyter lab 
+
