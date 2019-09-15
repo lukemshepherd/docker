@@ -1,18 +1,21 @@
 FROM continuumio/miniconda3
 
-LABEL maintainer="Luke Shepherd"
+LABEL maintainer="Luke Shepherd: l.m.shepherd@outlook.com"
 
-WORKDIR /py_jupyter
+WORKDIR /app
 
-COPY . /py_jupyter
-
-# instals packages and removes unused ones
-RUN conda install jupyterlab -y && \ 
-conda clean -y -all
+RUN conda update conda -y \ 
+    && conda install -y --quiet \
+    'jupyterlab' \
+    'numpy'\
+    'scikit-image' \
+    'scikit-learn' \
+    'seaborn' \ 
+    'pathlib'\
+    && conda clean --yes --all
 
 EXPOSE 8888
 
-VOLUME /py_jupyter
+VOLUME /app
 
-# Run juypter when container launches
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+CMD ["jupyter", "lab", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
