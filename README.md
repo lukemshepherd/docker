@@ -5,6 +5,7 @@ This is a minimal python environment from the miniconda base image
 ## How to install:
 
 `mkdir mini_py`
+
 `cd mini_py`
 
 git pull 
