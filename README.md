@@ -1,23 +1,17 @@
-# Python 3 with Juypter Lab 
+# Minimal python docker image
 
-Installs (through conda):
+This is a minimal python environment from the miniconda base image
 
-- Jupyter lab 
+## How to install:
 
+mkdir mini_py
+cd mini_py
 
-*Requires directory 'py_jupyter'*
+git pull 
 
-*#build the docker image*
+### Build docker image
+docker build -t mini_py .
 
-docker build -t py_jupyter
-
-*#build dir for dockerfile*
-
-mkdir py_jupyter
-  
-
-
-
-
-docker run -p 8888:8888 -v /filepath/to/dir/you/want/mounted:/py_jupyter py_jupyter
+### To run Jupyter
+docker run -p 8888:8888 -v /filepath/to/dir/you/want/mounted:/app mini_py
 
