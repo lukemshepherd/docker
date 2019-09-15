@@ -8,7 +8,7 @@ This is a minimal python environment from the miniconda base image
 
 `cd mini_py`
 
-git pull 
+`git pull https://github.com/lukemshepherd/mini_py.git`
 
 ### Build docker image
 `docker build -t mini_py .`
