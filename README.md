@@ -11,7 +11,7 @@ This is a minimal python environment from the miniconda base image
 ### Build docker image
 `docker build -t mini_py .`
 
-*NB the . is not a typo that's specifying that you want to build your image from your current directory* 
+*NB the . is not a typo! That's specifying that you want to build your image from your current directory* 
 
 ### To run Jupyter
 `docker run -p 8888:8888 -v path/to/mounted/dir:/app mini_py`
