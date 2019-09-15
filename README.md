@@ -4,11 +4,9 @@ This is a minimal python environment from the miniconda base image
 
 ## How to install:
 
-`mkdir mini_py`
+`git clone https://github.com/lukemshepherd/mini_py.git`
 
 `cd mini_py`
-
-`git clone https://github.com/lukemshepherd/mini_py.git`
 
 ### Build docker image
 `docker build -t mini_py .`
