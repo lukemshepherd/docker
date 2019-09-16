@@ -19,7 +19,7 @@ Replace the environment.yml with your own
 
 *NB the . is not a typo! That's specifying that you want to build your image from your current directory* 
 
-### To run Jupyter
+### To run Jupyter Lab
 
 `docker run -p 8888:8888 -v path/to/mounted/dir:/files base-ds`
 
