@@ -14,7 +14,9 @@ Replace the environment.yml with your own
 
 `git clone https://github.com/lukemshepherd/docker/base-ds.git`
 
-`docker build -t mini_py .`
+`cd .../base-ds`
+
+`docker build -t base-ds .`
 
 *NB the . is not a typo! That's specifying that you want to build your image from your current directory* 
 
