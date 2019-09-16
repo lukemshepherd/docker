@@ -4,6 +4,8 @@ These are a few of my docker images that I use for my work. The docker file buil
 
 ## Turning YOUR conda environment into a docker image
 
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 `conda env export > environment.yml`
 
 Replace the environment.yml with your own
