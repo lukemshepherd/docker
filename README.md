@@ -15,7 +15,7 @@ Replace the environment.yml with your own
 ## Build docker image
 `cd docker_dir`
 
-`docker build -t docker_dir .`
+`docker build -t docker_image_name .`
 
 *NB the . is not a typo! That's specifying that you want to build your image from your current directory* 
 
@@ -27,8 +27,8 @@ or a bit more verbosely...
 
 `docker run \`
 
-`-p 8888:8888 \` *# Port on YOUR machine : Port exposed in docker image*
+`-p 8888:8888 \` *# port on YOUR machine : Port exposed in docker image*
      
-`-v /Users/luke/folder:/file \` *# /Full/path/to/folder/you/want/to/mount : /directory in image*
+`-v /Users/luke/folder:/file \` *# /full/path/to/folder/you/want/to/mount : /directory in image*
       
 `base-ds` *# docker image name*
