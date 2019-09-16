@@ -11,12 +11,9 @@ Replace the environment.yml with your own
 *If you are exporting a non base environment you will neet to change `name: ...` of the environment.yml to base*
 
 ## Build docker image
+`cd docker_dir`
 
-`git clone https://github.com/lukemshepherd/docker/base-ds.git`
-
-`cd .../base-ds`
-
-`docker build -t base-ds .`
+`docker build -t docker_dir .`
 
 *NB the . is not a typo! That's specifying that you want to build your image from your current directory* 
 
@@ -33,4 +30,3 @@ or a bit more verbosely...
 `-v /Users/luke/folder:/file \` *# /Full/path/to/folder/you/want/to/mount : /directory in image*
       
 `base-ds` *# docker image name*
-
