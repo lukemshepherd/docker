@@ -30,7 +30,7 @@ or a bit more verbosely...
 
 `-p 8888:8888 \` *# Port on YOUR machine : Port exposed in docker image*
      
-`-v /Users/luke/folder:/app \` *# /Full/path/to/folder/you/want/to/mount : /directory in image*
+`-v /Users/luke/folder:/file \` *# /Full/path/to/folder/you/want/to/mount : /directory in image*
       
-`mini_py` *# docker image name*
+`base-ds` *# docker image name*
 
