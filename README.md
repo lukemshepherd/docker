@@ -25,11 +25,11 @@ Replace the environment.yml with your own
 
 or a bit more verbosely...
 
-`docker run \`
+`docker run`
 
-`-p 8888:8888 \` *# port on YOUR machine : Port exposed in docker image*
+`-p 8888:8888` *# port on YOUR machine : Port exposed in docker image*
      
-`-v /Users/luke/folder:/file \` *# /full/path/to/folder/you/want/to/mount : /directory in image*
+`-v /Users/luke/folder:/file` *# /full/path/to/folder/you/want/to/mount : /directory in image*
       
 `base-ds` *# docker image name*
 
