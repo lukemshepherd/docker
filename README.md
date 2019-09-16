@@ -39,3 +39,8 @@ Trying to de bug a docker file can be a bit hard (especially if you don't really
 
 
 If you comment out your `CMD` line, rebuild your image and then run with an interactive shell - this allows you to move around inside your container so get a sense of what is where.
+
+
+### To do
+1. Latex rendering in notebooks 
+2. nvida/ conda for fastai 
