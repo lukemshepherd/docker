@@ -1,0 +1,19 @@
+name: base
+channels:
+  - conda-forge
+  - pytorch
+  - fastai
+  - defaults
+dependencies:
+  - pytorch
+  - torchvision
+  # - cuda100
+  - fastprogress
+  - fastai
+  - jupyterlab
+  - imageio
+  - ipywidgets
+  - pip
+  - pip:
+      # - nvidia-ml-py3
+      # - dataclasses # should be in python 3.7? 
