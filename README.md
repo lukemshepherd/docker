@@ -23,7 +23,7 @@ Replace the environment.yml with your own
 
 `docker run -p 8888:8888 -v path/to/mounted/dir:/files base-ds`
 
-or a bit more verbosely...
+breaking it down...
 
 `docker run`
 
