@@ -8,7 +8,7 @@ These are a few of my docker images that I use for my work. The docker file buil
 
 Replace the environment.yml with your own
 
-If you are exporting a non base environment you will neet to change `name: ...` of the environment.yml to base
+*If you are exporting a non base environment you will neet to change `name: ...` of the environment.yml to base*
 
 ## Build docker image
 
