@@ -32,3 +32,10 @@ or a bit more verbosely...
 `-v /Users/luke/folder:/file \` *# /full/path/to/folder/you/want/to/mount : /directory in image*
       
 `base-ds` *# docker image name*
+
+### Tips
+
+Trying to de bug a docker file can be a bit hard (especially if you don't really know what you are doing like me)! 
+
+
+If you comment out your `CMD` line, rebuild your image and then run with an interactive shell - this allows you to move around inside your container so get a sense of what is where.
