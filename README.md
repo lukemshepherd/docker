@@ -30,7 +30,7 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
  
 #### Arch distros
  
-Docker has a fun habit of breaking in fun, exiting ways!
+Docker has a fun habit of breaking in (fun,) exiting ways!
  
 Your GPU(s) won't be recognized unless you either specify `--device` or pass it as `--privileged`
  
