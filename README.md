@@ -2,11 +2,11 @@
  
 Fastai docker image with segmentation packages:
  
-   - segmentation-models-pytorch
-   - opencv-contrib-python-headless # full openCV install
-   - albumentations
-   - ttach  # test time augmentation
-   
+   - `segmentation-models-pytorch`
+   - `opencv-contrib-python-headless` # full openCV install
+   - `albumentations`
+   - `ttach`  # test time augmentation
+
  
 ## Turning conda environment into a docker image
  
@@ -34,15 +34,15 @@ Your GPU(s) won't be recognized unless you either specify `--device` or pass it 
  
 https://github.com/NVIDIA/nvidia-docker/issues/1447
  
-`docker run \
-   -it \
-   --gpus all \
-   --device /dev/nvidia0 --device /dev/nvidia-uvm --device /dev/nvidia-uvm-tools --device /dev/nvidiactl \ # needed if you are running arch
-   -p 8888:8888 \
-   -v $PWD:/home/shep \
-   -w /home/shep \
-   --shm-size=8gb \ # prevents out of memory error for dataloaders
-   fastai-seg"`
+    docker run \
+    -it \
+    --gpus all \
+    --device /dev/nvidia0 --device /dev/nvidia-uvm --device /dev/nvidia-uvm-tools --device /dev/nvidiactl \ # needed if you are running arch
+    -p 8888:8888 \
+    -v $PWD:/home/shep \
+    -w /home/shep \
+    --shm-size=8gb \ # prevents out of memory error for dataloaders
+    fastai-seg"
  
 <!-- ### Tips
  
