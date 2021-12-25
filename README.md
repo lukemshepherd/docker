@@ -6,7 +6,7 @@ Fastai docker image with segmentation packages:
    - [`opencv-contrib-python-headless`](https://github.com/opencv/opencv-python) # full openCV install
    - [`albumentations`](https://github.com/albumentations-team/albumentations)
    - [`ttach`](https://github.com/qubvel/ttach)  # test time augmentation
-   -  
+
 ## Build docker image
  
 `git clone https://github.com/lukemshepherd/docker.git`
