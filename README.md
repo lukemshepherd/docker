@@ -2,7 +2,7 @@
  
 Fastai docker image with segmentation packages:
  
-   - `segmentation-models-pytorch`
+   - `[segmentation-models-pytorch](https://github.com/qubvel/segmentation_models.pytorch)`
    - `opencv-contrib-python-headless` # full openCV install
    - `albumentations`
    - `ttach`  # test time augmentation
