@@ -19,7 +19,9 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
 ## Build docker image
  
 `git clone https://github.com/lukemshepherd/docker.git`
+
 `cd docker-builds/fastai-seg`
+
 `docker build -t fastai-seg .`
  
 <!-- *NB the . is not a typo! That's specifying that you want to build your image from your current directory*  -->
