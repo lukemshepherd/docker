@@ -39,11 +39,20 @@ https://github.com/NVIDIA/nvidia-docker/issues/1447
     --gpus all \
     --device /dev/nvidia0 --device /dev/nvidia-uvm --device /dev/nvidia-uvm-tools --device /dev/nvidiactl \ # needed if you are running arch
     -p 8888:8888 \
-    -v $PWD:/home/shep \
-    -w /home/shep \
+    -v $PWD:/home/your_user_here \
+    -w /home/your_user_here \
     --shm-size=8gb \ # prevents out of memory error for dataloaders
     fastai-seg"
  
+
+
+ ### Saving docker image state
+ https://docs.docker.com/engine/reference/commandline/commit/
+
+ If you install packages in your image (and don't want to add it to the enviroment.yml and rebuild); you can commit the changes with ...
+
+`docker commit CONTAINER_ID REPOSITORY:TAG`
+
 <!-- ### Tips
  
 Trying to de bug a docker file can be a bit hard (especially if you don't really know what you are doing like me)!
