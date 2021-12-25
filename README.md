@@ -6,16 +6,7 @@ Fastai docker image with segmentation packages:
    - [`opencv-contrib-python-headless`](https://github.com/opencv/opencv-python) # full openCV install
    - [`albumentations`](https://github.com/albumentations-team/albumentations)
    - [`ttach`](https://github.com/qubvel/ttach)  # test time augmentation
-
- 
-## Turning conda environment into a docker image
- 
-https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
- 
-`conda activate env_name`
- 
-`conda env export > environment.yml`
- 
+   -  
 ## Build docker image
  
 `git clone https://github.com/lukemshepherd/docker.git`
@@ -24,11 +15,9 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environme
 
 `docker build -t fastai-seg .`
  
-<!-- *NB the . is not a typo! That's specifying that you want to build your image from your current directory*  -->
+## To run Jupyter with GPU
  
-### To run Jupyter with GPU
- 
-#### Arch distros
+### Arch distros
  
 Docker has a fun habit of breaking in (fun,) exiting ways!
  
@@ -51,13 +40,21 @@ or
     docker run ... --gpus all --privalaged ...
  
 
-
- ### Saving docker image state
+ ## Saving docker image state
  https://docs.docker.com/engine/reference/commandline/commit/
 
  If you install packages in your image (and don't want to add it to the enviroment.yml and rebuild); you can commit the changes with ...
 
 `docker commit CONTAINER_ID REPOSITORY:TAG`
+
+
+## Turning conda environment into a docker image
+ 
+https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+ 
+`conda activate env_name`
+ 
+`conda env export > environment.yml`
 
 <!-- ### Tips
  
