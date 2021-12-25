@@ -6,17 +6,11 @@ dependencies:
   - numpy
   - pandas
   - pathlib
-  - matplotlib
   - jupyterlab
-  - imageio
-  - scikit-image 
-  - scikit-learn
-  - scipy
   - seaborn
   - beautifulsoup4
   - ipywidgets
   - pip
-  - mayavi
   - pip:
       # - pip 
       # - packages 

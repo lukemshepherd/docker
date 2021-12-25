@@ -1,19 +1,16 @@
 name: base
 channels:
   - conda-forge
-  - pytorch
-  - fastai
   - defaults
 dependencies:
-  - pytorch
-  - torchvision
-  # - cuda100
-  - fastprogress
-  - fastai
   - jupyterlab
-  - imageio
-  - ipywidgets
-  - pip
+  - seaborn
+  - nodejs
+  - pip 
   - pip:
-      # - nvidia-ml-py3
-      # - dataclasses # should be in python 3.7? 
+      - segmentation-models-pytorch 
+      - opencv-contrib-python-headless #full openCV install 
+      - albumentations 
+      - ttach  
+      - nbdev
+      
