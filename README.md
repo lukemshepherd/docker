@@ -48,7 +48,7 @@ or
 `docker commit CONTAINER_ID REPOSITORY:TAG`
 
 
-## Turning conda environment into a .yml file
+## Turning conda environment into a environment.yml file
  
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
  
