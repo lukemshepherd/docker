@@ -45,6 +45,10 @@ https://github.com/NVIDIA/nvidia-docker/issues/1447
     -w /home/your_user_here \
     --shm-size=8gb \ # prevents out of memory error for dataloaders
     fastai-seg"
+    
+or 
+
+    docker run ... --gpus all --privalaged ...
  
 
 
